@@ -1,0 +1,33 @@
+* {
+  font-family: "Fira Code", "Font Awesome 6 Free", sans-serif;
+  font-size: 13px;
+  padding: 0 6px;
+}
+
+window#waybar {
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#workspaces {
+  margin: 0 5px;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+#workspaces button.active {
+  background: #4c566a;
+  border-radius: 5px;
+}
+
