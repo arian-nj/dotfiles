@@ -143,12 +143,17 @@ return {
       })
 
 
-      require('lspconfig').lua_ls.setup {}
+      local nvim_lsp = require "lspconfig"
+      nvim_lsp.lua_ls.setup {}
+
+      local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
+
+      nvim_lsp.tailwindcss.setup {}
+      vim.lsp.enable({ "tailwindcss" })
 
       require('lspconfig').vtsls.setup {}
 
 
-      local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
 
       local vue_language_server_path = vim.fn.stdpath('data') ..
           "/mason/packages/vue-language-server/node_modules/@vue/language-server"
