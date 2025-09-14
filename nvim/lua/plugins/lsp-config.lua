@@ -146,6 +146,8 @@ return {
       local nvim_lsp = require "lspconfig"
       nvim_lsp.lua_ls.setup {}
 
+      nvim_lsp.gopls.setup {}
+
       local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
 
       nvim_lsp.tailwindcss.setup {}
