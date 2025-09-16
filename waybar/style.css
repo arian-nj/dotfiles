@@ -1,13 +1,13 @@
 * {
-  font-family: "Fira Code", "Font Awesome 6 Free", sans-serif;
-  font-size: 13px;
-  padding: 0 6px;
+	font-family: "Fira Code", "Font Awesome 6 Free", sans-serif;
+	font-size: 13px;
+	padding: 0 6px;
 }
 
 window#waybar {
-  background: rgba(30, 30, 30, 0.9);
-  color: white;
-  border-bottom: 1px solid #444;
+	background: rgba(30, 30, 30, 0.9);
+	color: white;
+	border-bottom: 1px solid #444;
 }
 
 #clock,
@@ -16,18 +16,17 @@ window#waybar {
 #network,
 #tray,
 #workspaces {
-  margin: 0 5px;
+	margin: 0 5px;
 }
 
 #workspaces button {
-  padding: 0 8px;
-  border: none;
-  background: transparent;
-  color: white;
+	padding: 0 8px;
+	border: none;
+	background: transparent;
+	color: white;
 }
 
 #workspaces button.active {
-  background: #4c566a;
-  border-radius: 5px;
+	background: #4c566a;
+	border-radius: 5px;
 }
-
